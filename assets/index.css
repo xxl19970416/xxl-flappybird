@@ -1,0 +1,132 @@
+#game{
+  position: relative;
+  width:100%;
+  height: 600px;
+  background-image: url(../image/sky.png);
+}
+
+.bird{
+  position:absolute;
+  top:235px;
+  left:50%;
+  margin-left:-22.5px;
+  width:45px;
+  height: 45px;
+  /* background-color: red; */
+  background-image: url(../image/bird.png);
+}
+
+.start{
+  width: 200px;
+  height: 60px;
+  /* background-color: red; */
+  line-height: 60px;
+  text-align:center;
+  position: absolute;
+  left:50%;
+  margin-left:-100px;
+  top:295px;
+  font-weight: bolder;
+}
+
+.start.start-white{
+  font-size:24px;
+  color:#fff;
+}
+
+.start.start-blue{
+  font-size:36px;
+  color:#09f;
+}
+
+.score{
+  position:absolute;
+  left:50%;
+  color:#fff;
+  font-size: 24px;
+  font-weight: bolder;
+  transform:translateX(-50%);
+}
+
+.mask{
+  position:absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#000;
+  opacity: 0.6;
+}
+
+
+.end{
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  top:70px;
+  text-align: center;
+}
+
+.end .over{
+  font-size: 35px;
+  color:red;
+  font-weight: bolder;
+}
+
+.end .result,.end .final-score{
+  font-size:20px;
+  color:#ff0;
+  font-weight: bolder;
+  margin-top:20px;
+}
+
+.end .rank-list{
+  margin-top: 20px;
+  color:#09f;
+  text-align: left;
+}
+
+.end .rank-item{
+  margin-bottom: 10px;
+  padding:0 10px;
+  /* background-color: red; */
+  height:30px;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.end .rank-degree{
+  display:inline-block;
+  width:14px;
+  height: 14px;
+  color:#8eb9f5;
+  line-height: 14px;
+  text-align: center;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.end .rank-degree.first{
+  background-color: #f54545;
+}
+
+.end .rank-degree.second{
+  background-color: #ff8547;
+}
+
+.end .rank-degree.third{
+  background-color: #ffac38;
+}
+
+.end .rank-score{
+  width:30px;
+  display: inline-block;
+}
+
+
+.end .restart{
+  color:#09f;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+}
